@@ -14,8 +14,8 @@ Sequential = models.Sequential
 ModelCheckpoint = callbacks.ModelCheckpoint
 HDF5Matrix = utils.HDF5Matrix
 
-# dataset_xs = HDF5Matrix('dataset.hdf5', 'xs')
-# dataset_ys = HDF5Matrix('dataset.hdf5', 'ys')
+dataset_xs = HDF5Matrix('dataset.hdf5', 'xs')
+dataset_ys = HDF5Matrix('dataset.hdf5', 'ys')
 
 model = Sequential([
     Conv2D(24, (5, 5), strides=(2, 2), padding='same', input_shape=(160, 40, 3)),
