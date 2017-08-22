@@ -24,7 +24,7 @@ model = Sequential([
     Conv2D(36, (5, 5), strides=(2, 2), padding='same'),
     BatchNormalization(),
     Activation('relu'),
-    Conv2D(48, (5-2, 5-2), strides=(2-1, 2-1), padding='same'),
+    Conv2D(48, (3, 3), padding='same'),
     BatchNormalization(),
     Activation('relu'),
     Dropout(0.5),
